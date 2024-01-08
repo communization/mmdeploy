@@ -172,3 +172,7 @@ demo/csharp/*/Properties
 
 # doxygen
 docs/cppapi/docs
+
+# custom
+mmdeploy_models
+*.png
