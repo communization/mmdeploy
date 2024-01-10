@@ -10,7 +10,7 @@ def parse_args():
         description='show how to use sdk python api')
     parser.add_argument('--device_name', default='cuda' ,help='name of device, cuda or cpu')
     parser.add_argument(
-        '--model_path', default='/root/workspace/mmdeploy/mmdeploy_models/mmseg/ort2',
+        '--model_path', default='/root/workspace/mmdeploy/mmdeploy_models/mmseg/DLoop_ort',
         help='path of mmdeploy SDK model dumped by model converter')
     parser.add_argument('--image_path', default='/root/workspace/mmdeploy/demo/resources/cityscapes.png',
                         help='path of an image')

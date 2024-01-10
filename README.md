@@ -1,3 +1,15 @@
+##Method(custom_jetson)
+
+```
+bash custom_build_jetson.sh
+```
+: build docker image
+
+```
+bash install_jetson.bash
+```
+: In Container, install requirements
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
