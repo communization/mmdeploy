@@ -176,3 +176,5 @@ docs/cppapi/docs
 # custom
 mmdeploy_models
 *.png
+*.whl
+*rc4

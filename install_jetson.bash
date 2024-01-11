@@ -15,6 +15,8 @@ wget https://developer.download.nvidia.com/compute/redist/jp/v502/pytorch/torch-
     #-o torch-1.13.0a0+d0d6b1f2.nv22.10-cp38-cp38-linux_aarch64.whl
 pip3 install torch-1.13.0a0+d0d6b1f2.nv22.10-cp38-cp38-linux_aarch64.whl
 
+wget https://nvidia.box.com/shared/static/ssf2v7pf5i245fk4i0q926hy4imzs2ph.whl -O torch-1.11.0-cp38-cp38-linux_aarch64.whl
+pip3 install torch-1.11.0-cp38-cp38-linux_aarch64.whl
 
 ##torchvision 0.14.0 long time
 cd /
@@ -121,7 +123,8 @@ make -j$(nproc) && make install
 #mmseg
 pip install -U openmim
 mim install mmengine
-mim install "mmcv>=2.0.0rc2"
+#mim install "mmcv>=2.0.0rc2"
+mim install "mmcv>=2.0.0rc4"
 
 
 #mmsegmentation
@@ -137,16 +140,19 @@ sudo wget -qO- https://docs.luxonis.com/install_dependencies.sh | bash
 export PYTHONPATH=/root/workspace/mmsegmentation:/root/workspace/mmdeploy/tools/package_tools/packaging/mmdeploy_runtime:/root/workspace/mmdeploy/build/lib
 echo 'export PYTHONPATH=/root/workspace/mmsegmentation:/root/workspace/mmdeploy/tools/package_tools/packaging/mmdeploy_runtime:/root/workspace/mmdeploy/build/lib' >> ~/.bashrc 
 
+#mmcv
+# pip install mmcv-full
+
+#pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu116/torch1.13/index.html
 
 
 
 
 
+#sudo apt-get install software-properties-common
+#sudo add-apt-repository universe
 
-
-
-
-# sudo apt-get -y python3-pip libopenblas-dev
+#sudo apt-get install -y python3-pip libopenblas-dev
     
 # version=`python3 -c "import torch; print(torch.__version__)"`
 # if [ -n "$version" ];then
